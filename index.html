@@ -16,10 +16,10 @@
 
 <body>
 
-    <header>
+    <header class="position-sticky">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><b>BR</b> Architect</a>
+                <a class="navbar-brand" href="#"><b>BR</b><span >Architects</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -28,14 +28,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                            <a class="nav-link active" aria-current="page" href="#projects-section">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">About</a>
+                            <a class="nav-link active" href="#About-section">About</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-disabled="true">Contact</a>
+                            <a class="nav-link active" href="#Contact-section">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
             <div class="container-fluid">
                 <div class="row"></div>
                 <div class="col">
-                    <h1 class="text-white text-center "><span id="br">BR</span> <span id="archi-text">Architects</span>
+                    <h1 class="text-white text-center "><span id="br">BR</span> <span class="auto-type">Architects</span>
                     </h1>
                 </div>
             </div>
@@ -152,7 +152,7 @@
                                 <p>CEO & Fonder</p>
                                 <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
                                     necessitatibus!</p>
-                                <button class="btn btn-secondary ">Contact</button>
+                                <button class="btn btn-secondary rounded-0">Contact</button>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
@@ -162,7 +162,7 @@
                                 <p>Architect</p>
                                 <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
                                     necessitatibus!</p>
-                                <button class="btn btn-secondary ">Contact</button>
+                                <button class="btn btn-secondary rounded-0 ">Contact</button>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
@@ -172,7 +172,7 @@
                                 <p>Architect</p>
                                 <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
                                     necessitatibus!</p>
-                                <button class="btn btn-secondary ">Contact</button>
+                                <button class="btn btn-secondary rounded-0 ">Contact</button>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
@@ -182,7 +182,7 @@
                                 <p>Architect</p>
                                 <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
                                     necessitatibus!</p>
-                                <button class="btn btn-secondary ">Contact</button>
+                                <button class="btn btn-secondary rounded-0">Contact</button>
                             </div>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
 
                     <div class="row mt-4">
                         <form>
-                            <div class="col-12 mb-3">
+                            <div class="col-12 mb-3 ">
                                 <input type="text" class="form-control" placeholder="Name">
                             </div>
                             <div class="col-12 mb-3">
@@ -217,7 +217,7 @@
                             <div class="col-12 mb-3">
                                 <input type="text" class="form-control" placeholder="Comment">
                             </div>
-                            <div class="col mb-3"><button class="btn btn-dark">Send Message</button>
+                            <div class="col mb-3"><button class="btn btn-dark rounded-0 ">Send Message</button>
                             </div>
                     </div>
                     </form>
@@ -250,6 +250,19 @@
 
     <!-- Bootstrap 3S 5.2.x -->
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('.auto-type', {
+        strings: ['Architecture.', 'Made by Abdul-Rehman.'],
+        typeSpeed: 75,
+        backSpeed: 50,
+        loop: true
+      });
+    </script>
 </body>
 
 </html>
